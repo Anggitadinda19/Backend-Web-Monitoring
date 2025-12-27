@@ -1,0 +1,11 @@
+{
+  "id": "99aa-22bb",
+  "name": "Local Environment",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:9030",
+      "enabled": true
+    }
+  ]
+}

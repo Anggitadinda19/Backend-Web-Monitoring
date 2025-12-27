@@ -1,0 +1,2747 @@
+{
+	"info": {
+		"_postman_id": "a73b0a18-4010-4ef4-86bc-70f0a55475aa",
+		"name": "Union",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41286408"
+	},
+	"item": [
+		{
+			"name": "Mobile",
+			"item": [
+				{
+					"name": "Login",
+					"item": [
+						{
+							"name": "Login mobile",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "01250011",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/usermobile/loginmobile",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"usermobile",
+										"loginmobile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Patrol",
+					"item": [
+						{
+							"name": "create patrol",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/N8vdREMojYeDdA1CjxovYPR/iXQq35DG9U8eIBVZATSnoSu9GLI6CvBmNTwce3QlgWrebpWCaMcemqfyqQOZl8rjWzgJfbQh68UMgAeVV5cbjzI8IdwNQpiGc007Cn/Z4j8FVc3dDpCMUoW+G4OZS8E1LCoECbXDzK0YAYQ+v36lcZNgp+rlBVzROndryhzRCfbZ28+E9DdWuPlovUUkW56HcRAzJY88/iOZI0ylt3HOcV1xYFgHuDVk8WX0EpvmiIj/jBXDpBS5qdWl6+J6RQ/Ddx2VJYGAqFKH2FSsoEk2gQtaB+LwYT01pnqBzzVgv1fcCITMvft4NozgWnp5hWxqPuk+fCEoGFGgm0R1OXPj68SJVthVAOGmgsK4qLivKbW2F2f8m8O/3fQnna9Pv5NWPxGb+5TI=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idShift",
+											"value": "6790b1e0d2a3244d5ce92b45",
+											"type": "text"
+										},
+										{
+											"key": "idRuangan",
+											"value": "68118f7340c6f81250095646",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "NO",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "NO",
+											"type": "text"
+										},
+										{
+											"key": "nfc",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "temuan",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/Gemini_Generated_Image_7m1lld7m1lld7m1l.png",
+												"/C:/Users/Lenovo/Downloads/Gemini_Generated_Image_g1cod6g1cod6g1co.png"
+											]
+										},
+										{
+											"key": "idCabang",
+											"value": "2225",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "idClient",
+											"value": "160",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/patrolmobile/createpatrol",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"patrolmobile",
+										"createpatrol"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get patrol",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/xVk2HZswGe4kphkWM1SatUK0somOoKDB2dP6KRhE5ijBlvjjnaQT4mIRPFdjy8loR3KaCCwb5WTLuH2rBwSNDIxOYK5+ducfeq4cnxrda1Hai5EzzTDNq2vw8zX6k+7a/EYnja3lssaNFjMMskHOJjyzWWz5SpX57Pb3wciiOupJ4xLKJFN57a+j5kQpUl5xdJ1gi2g1cAQ1++ZFQWSp+HAh5un16EV9Q0buZCRQs1CUd9zlMfBKmkKvxkd+m4wm49gvbYiVLsHf0f3+4F8Fxrb88g6jyhFOg3ie0ilNIDbm2/7GBkm3vyFj0VXmT3umQ1Z2y1NBJDYrMpxs7bZseVgZp/d7WPXHpP3CbgyBIvxgP9sO+XIvb",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/patrolmobile/getpatrol",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"patrolmobile",
+										"getpatrol"
+									],
+									"query": [
+										{
+											"key": "dariTgl",
+											"value": "1737738000000",
+											"description": "2025-01-25 00:00",
+											"disabled": true
+										},
+										{
+											"key": "smpTgl",
+											"value": "1738688340000",
+											"description": "2025-02-04 23:59",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Visit",
+					"item": [
+						{
+							"name": "create visit",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX19OoO1OXn3Hu1+GE75GvwzM0hPIqg7x+cfw8Fcu7UqAz9zMi7p9wac7Petv8ErPAPsKkJbERcjlIjkyG+FtG++ugTe9V62Kvjxpt8MfHvozdOifQI9eVcX7UTvMdZ74/HVN8AtNYDltg0MIJVDcrZTBwQb7lWmyMc4t4nevzBSYXrsrsjaxeM4N7fjmOpCDINucBXOOlUqrjXTRRxli8DEoktohQllLWQ71Ux+gg46BhTdpievwjr4I3CMais22oj1rtwnHFTbYNDAb5Vc2maEY2dDEvlzvpcOvfuCTKm+IUiDr32rXLOVARBp11rCDqmys9OenW0Q5nl7FaPYtwAIvTheRmmtoXka6cejhyvvmKl3TbmcfZcudgfpM0rHkVmhA3mqYkl31kQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idCabang",
+											"value": "1923",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "125",
+											"type": "text"
+										},
+										{
+											"key": "namaCabang",
+											"value": "PT. Skintific Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "namaClient",
+											"value": "Dinda",
+											"type": "text"
+										},
+										{
+											"key": "judul",
+											"value": "Testing",
+											"type": "text"
+										},
+										{
+											"key": "tglPelaksanaan",
+											"value": "2025-01-25T10:30:00.000Z",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "ACC",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "Testing",
+											"type": "text"
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/PPT Magang PT Bina Area Persada (1).jpg",
+												"/C:/Users/Lenovo/Downloads/PPT Magang PT Bina Area Persada.jpg"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/visitmobile/createvisit",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"visitmobile",
+										"createvisit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get visit",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX197N4CaQK/Pr1iRqkMEAPFD2LMONEosaOLrwA/ziuB9z0sqqMfvty1fgoG/7D8iLJPhVqqDaLOlUBUjoWuntre4epuUA62G2KGP/7AppJEnNNM8CU7O4gmAMeIBKyREK9o8+7RwNuwN7YMLDDbNLoac9X3BBewiNsqIPNw3oss+Hj/1KJSKXF4Z92Y2CrnKSMMBpBVUEq0YuXmd5ef6eGfEhyX1rFn935NvjGu4qgY2Hux2vI0trIx/3Wkqjh8kEw92yRz0oX4oJa5+QvfjzDJQtJUmqyG6I/WoZM2DM5U1H0qkRmVGQRp2oFo8LlerA4ExEJe31wbxKv8RgJ8mP7Cx4nCv5bzPlncOnaYIo2+ZgalJx3xHL9T7A9oWN731WOHDldc9MTSOIeFKMZoKS1mHS6cIOsk5BjU=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/visitmobile/getvisit?dariTgl=1739120400000&smpTgl=1739206740000&page=1&limit=10",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"visitmobile",
+										"getvisit"
+									],
+									"query": [
+										{
+											"key": "dariTgl",
+											"value": "1739120400000",
+											"description": "2025-02-10 00:00"
+										},
+										{
+											"key": "smpTgl",
+											"value": "1739206740000",
+											"description": "2025-02-10 23:59"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Training",
+					"item": [
+						{
+							"name": "create training",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX197N4CaQK/Pr1iRqkMEAPFD2LMONEosaOLrwA/ziuB9z0sqqMfvty1fgoG/7D8iLJPhVqqDaLOlUBUjoWuntre4epuUA62G2KGP/7AppJEnNNM8CU7O4gmAMeIBKyREK9o8+7RwNuwN7YMLDDbNLoac9X3BBewiNsqIPNw3oss+Hj/1KJSKXF4Z92Y2CrnKSMMBpBVUEq0YuXmd5ef6eGfEhyX1rFn935NvjGu4qgY2Hux2vI0trIx/3Wkqjh8kEw92yRz0oX4oJa5+QvfjzDJQtJUmqyG6I/WoZM2DM5U1H0qkRmVGQRp2oFo8LlerA4ExEJe31wbxKv8RgJ8mP7Cx4nCv5bzPlncOnaYIo2+ZgalJx3xHL9T7A9oWN731WOHDldc9MTSOIeFKMZoKS1mHS6cIOsk5BjU=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idCabang",
+											"value": "1923",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "125",
+											"type": "text"
+										},
+										{
+											"key": "namaCabang",
+											"value": "PT. Skintific Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "namaClient",
+											"value": "Dinda",
+											"type": "text"
+										},
+										{
+											"key": "judul",
+											"value": "Testing",
+											"type": "text"
+										},
+										{
+											"key": "tglPelaksanaan",
+											"value": "2025-01-25T10:30:00.000Z",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "-",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "Yes",
+											"type": "text"
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/WhatsApp_Image_2025-05-07_at_11.13.36_adf19b44-removebg-preview.png",
+												"/C:/Users/Lenovo/Downloads/WhatsApp_Image_2025-04-28_at_21.52.50_966d1dbb-removebg-preview.png"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/trainingmobile/createtraining",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"trainingmobile",
+										"createtraining"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get training",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX197N4CaQK/Pr1iRqkMEAPFD2LMONEosaOLrwA/ziuB9z0sqqMfvty1fgoG/7D8iLJPhVqqDaLOlUBUjoWuntre4epuUA62G2KGP/7AppJEnNNM8CU7O4gmAMeIBKyREK9o8+7RwNuwN7YMLDDbNLoac9X3BBewiNsqIPNw3oss+Hj/1KJSKXF4Z92Y2CrnKSMMBpBVUEq0YuXmd5ef6eGfEhyX1rFn935NvjGu4qgY2Hux2vI0trIx/3Wkqjh8kEw92yRz0oX4oJa5+QvfjzDJQtJUmqyG6I/WoZM2DM5U1H0qkRmVGQRp2oFo8LlerA4ExEJe31wbxKv8RgJ8mP7Cx4nCv5bzPlncOnaYIo2+ZgalJx3xHL9T7A9oWN731WOHDldc9MTSOIeFKMZoKS1mHS6cIOsk5BjU=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/trainingmobile/gettraining?dariTgl=1737738000000&smpTgl=1746723540000&page=1&limit=10",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"trainingmobile",
+										"gettraining"
+									],
+									"query": [
+										{
+											"key": "dariTgl",
+											"value": "1737738000000",
+											"description": "2025-01-25 00:00"
+										},
+										{
+											"key": "smpTgl",
+											"value": "1746723540000"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cabang",
+					"item": [
+						{
+							"name": "create cabang",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18FZsqBMjlpdcIeImGSig1YcxDwAc0Ggj8Uv0ex++cqJmQIf3DykhUqOsdJQ2lLOKv2Wu9Uhp/sM/0mqnpx6kKu6J6+i12wCyHoMKfOjUqwqmFuYwCC80uSfdBewFQpc8tiLjZ0FPfNSsQU1sVlXLwzib38Hj5xoQ53cZ+E0pJjDnyav0K8n4unMOc1sVsvQZDcij6gmyGvxVTsFX1U9qZurc1zp1h2PEk9+t3h2hNnpGmH7+LznnOUEQ3mTHydaTXCE3/bwuV3u4Htvijf2IDwPxLlr8ZlSQhdESjJEjshLxmrUR0RW4Y8sx5EPFate6Vc8um8EwK9Tg5Neq6B4pkIJJIIexXeP7RD2pKj1djRZzSaVr+Q9CqRYfwTugsBD8EXZ8hVfKk+FQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idCabang",
+											"value": "1923",
+											"type": "text"
+										},
+										{
+											"key": "namaCabang",
+											"value": "PT. Skintific Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "125",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/cabangmobile/createcabang",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"cabangmobile",
+										"createcabang"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get cabang",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1+SB3VPlfkMdtNAs72gnPVWM/5Uz732HjBsAoUMCe4yiX60MFD+mz1CPW3KzwvE5FBx4vL/MJuZrS5QBdYolyhO8pEhO9AAtt+ybHF++5JieYkKfQPyF2iJtER/8yrk3VT05i1Ydc3j4sibTV8z98ajIf/aQuaWy0r38aWWwIi7INBnChurr7lfy+ooY+MSXc50u6nOscUt3JToGmzV6L3rzymHD/+YsCqrBPINVAqzY257K0JX2ynE6MfnmxElmDjab3q0GfIaLHrIt16chsiXbVFiErTf6WW+nGL4LbvUQbXZpz3qBThbKYVUuiy76qsC9zaO6v1Z6vtkOGRr3LMx8V2Udp64XHOcIjFLMAAS3U4B7LwRKztJXpB6TcC2ssdfU2tYeJgMUo8ZFOZ4kyi1lwJRtZB8foc=",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/cabangmobile/getcabang",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"cabangmobile",
+										"getcabang"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "create client",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18FZsqBMjlpdcIeImGSig1YcxDwAc0Ggj8Uv0ex++cqJmQIf3DykhUqOsdJQ2lLOKv2Wu9Uhp/sM/0mqnpx6kKu6J6+i12wCyHoMKfOjUqwqmFuYwCC80uSfdBewFQpc8tiLjZ0FPfNSsQU1sVlXLwzib38Hj5xoQ53cZ+E0pJjDnyav0K8n4unMOc1sVsvQZDcij6gmyGvxVTsFX1U9qZurc1zp1h2PEk9+t3h2hNnpGmH7+LznnOUEQ3mTHydaTXCE3/bwuV3u4Htvijf2IDwPxLlr8ZlSQhdESjJEjshLxmrUR0RW4Y8sx5EPFate6Vc8um8EwK9Tg5Neq6B4pkIJJIIexXeP7RD2pKj1djRZzSaVr+Q9CqRYfwTugsBD8EXZ8hVfKk+FQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idClient",
+											"value": "125",
+											"type": "text"
+										},
+										{
+											"key": "namaClient",
+											"value": "Dinda",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/clientmobile/createclient",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"clientmobile",
+										"createclient"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get client",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18FZsqBMjlpdcIeImGSig1YcxDwAc0Ggj8Uv0ex++cqJmQIf3DykhUqOsdJQ2lLOKv2Wu9Uhp/sM/0mqnpx6kKu6J6+i12wCyHoMKfOjUqwqmFuYwCC80uSfdBewFQpc8tiLjZ0FPfNSsQU1sVlXLwzib38Hj5xoQ53cZ+E0pJjDnyav0K8n4unMOc1sVsvQZDcij6gmyGvxVTsFX1U9qZurc1zp1h2PEk9+t3h2hNnpGmH7+LznnOUEQ3mTHydaTXCE3/bwuV3u4Htvijf2IDwPxLlr8ZlSQhdESjJEjshLxmrUR0RW4Y8sx5EPFate6Vc8um8EwK9Tg5Neq6B4pkIJJIIexXeP7RD2pKj1djRZzSaVr+Q9CqRYfwTugsBD8EXZ8hVfKk+FQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/clientmobile/getclient",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"clientmobile",
+										"getclient"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ruangan",
+					"item": [
+						{
+							"name": "create ruangan",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1+8RMHRdKYN/eDdjbJqbhl8C+QawQJIpue/IA1/JSV+iAXEBrwgjMKkPxr00qOsSIDr8xW7D+FOJz4iz4qRmnzEq+NGuVtgJ5YcupFlwPPy+p821Pgvu1NLJs4hMjG2w70/ZMDCbc9kudIvSmPaH4Yy8OVjmzr/PtuqsU2ObIKYWtFgW7hZYYoRe72GgVPoS81GUk+NXXGxlCfszi3PJ8o2fFyGirmPJOtOqrNufcsc1kdjXJN7d/vVI7f2DMyP6r0XOrVAg8IqlIA85ivhYw5c46A/3umtrf2VsTAEZMi16XClCFYfvg30QT+V8asIWCQeemYMtBuHZRq7EVjPHxQnTiZNx+UeTRXmUc6OY+ZIFhJ83k2aibLJBl5DvNFS3LoCiQt0Hy/dYVd1t6/7fmXfWHgbz9EXN74=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idCabang",
+											"value": "2223",
+											"type": "text"
+										},
+										{
+											"key": "ruangan",
+											"value": "lalala",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "175",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/ruanganmobile/createruangan",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ruanganmobile",
+										"createruangan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get ruangan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX197N4CaQK/Pr1iRqkMEAPFD2LMONEosaOLrwA/ziuB9z0sqqMfvty1fgoG/7D8iLJPhVqqDaLOlUBUjoWuntre4epuUA62G2KGP/7AppJEnNNM8CU7O4gmAMeIBKyREK9o8+7RwNuwN7YMLDDbNLoac9X3BBewiNsqIPNw3oss+Hj/1KJSKXF4Z92Y2CrnKSMMBpBVUEq0YuXmd5ef6eGfEhyX1rFn935NvjGu4qgY2Hux2vI0trIx/3Wkqjh8kEw92yRz0oX4oJa5+QvfjzDJQtJUmqyG6I/WoZM2DM5U1H0qkRmVGQRp2oFo8LlerA4ExEJe31wbxKv8RgJ8mP7Cx4nCv5bzPlncOnaYIo2+ZgalJx3xHL9T7A9oWN731WOHDldc9MTSOIeFKMZoKS1mHS6cIOsk5BjU=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/ruanganmobile/getruangan",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ruanganmobile",
+										"getruangan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get ruangan by kode ruangan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18FZsqBMjlpdcIeImGSig1YcxDwAc0Ggj8Uv0ex++cqJmQIf3DykhUqOsdJQ2lLOKv2Wu9Uhp/sM/0mqnpx6kKu6J6+i12wCyHoMKfOjUqwqmFuYwCC80uSfdBewFQpc8tiLjZ0FPfNSsQU1sVlXLwzib38Hj5xoQ53cZ+E0pJjDnyav0K8n4unMOc1sVsvQZDcij6gmyGvxVTsFX1U9qZurc1zp1h2PEk9+t3h2hNnpGmH7+LznnOUEQ3mTHydaTXCE3/bwuV3u4Htvijf2IDwPxLlr8ZlSQhdESjJEjshLxmrUR0RW4Y8sx5EPFate6Vc8um8EwK9Tg5Neq6B4pkIJJIIexXeP7RD2pKj1djRZzSaVr+Q9CqRYfwTugsBD8EXZ8hVfKk+FQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/ruanganmobile/getruanganmobile?kodeRuangan=095646",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ruanganmobile",
+										"getruanganmobile"
+									],
+									"query": [
+										{
+											"key": "kodeRuangan",
+											"value": "095646"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Shift",
+					"item": [
+						{
+							"name": "create shift",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18FZsqBMjlpdcIeImGSig1YcxDwAc0Ggj8Uv0ex++cqJmQIf3DykhUqOsdJQ2lLOKv2Wu9Uhp/sM/0mqnpx6kKu6J6+i12wCyHoMKfOjUqwqmFuYwCC80uSfdBewFQpc8tiLjZ0FPfNSsQU1sVlXLwzib38Hj5xoQ53cZ+E0pJjDnyav0K8n4unMOc1sVsvQZDcij6gmyGvxVTsFX1U9qZurc1zp1h2PEk9+t3h2hNnpGmH7+LznnOUEQ3mTHydaTXCE3/bwuV3u4Htvijf2IDwPxLlr8ZlSQhdESjJEjshLxmrUR0RW4Y8sx5EPFate6Vc8um8EwK9Tg5Neq6B4pkIJJIIexXeP7RD2pKj1djRZzSaVr+Q9CqRYfwTugsBD8EXZ8hVfKk+FQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idCabang",
+											"value": "2223",
+											"type": "text"
+										},
+										{
+											"key": "namaShift",
+											"value": "Shift 2",
+											"type": "text"
+										},
+										{
+											"key": "durasi",
+											"value": "8",
+											"type": "text"
+										},
+										{
+											"key": "patroli",
+											"value": "8",
+											"type": "text"
+										},
+										{
+											"key": "jam",
+											"value": "23",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/shiftmobile/createshift",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"shiftmobile",
+										"createshift"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get shift",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/HzSn6irMN1daXtVjBW3JxwoAv6qubPZ7amZwnPRFGp+yBuLbxtdQ7ylK5SZ+FmAcQdqIhWz90IYlPH3pLjytm08faO1gVw6YwxalINZOaSVVW0RJe0WDMPyJpx34ggmVugigz65tD7wq3i2xs0frOIdkze2aIf0WVM1FO9gUW0sWMRR62cBqPik5W6EkpryqCm3O5PvQytrAuEkC5f49pCCPzd1xvt5R4nhigyuY2fqnbnoaeasVXEG73IT56Z6XxwLxwbbGXURkg2hVBoRAzhF5SxyWyJG6ZTp1N9rSm0hop1uvvTRR/OYWN1F/+wYJA06eyU/E4xrPuFfoLxKailaE4nSvQX3B7JvZ0je9gugADFzAJZk/KS2nhUmTWfpSEhlmsg8HkgOhyuYNYxn+/VRe9RkFpN7w=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/shiftmobile/getshift",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"shiftmobile",
+										"getshift"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get shift by waktu",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18ZpXdnj6ClIAyRUqvFQp0RwvW3UBE/Dah0vF0eFs/A8pPpxe+QaaZ3jG7zGi0tGSbT5Hxk5KLUQJOeoKkHAcUMUeTLyO8BTDQ5V3huht6QxftO+MmspHTKk45c7kAj74OeRkOy6oAjQcPX8nEjtpQGEGHfSOfZLYy6scNKF6xgWeDSYQNqYtuxpMyLBe91sLxjUe2IIHF8b2WmzNKzbCL/uNiwkEP1f+UhmuIGWY9NqQzZTOSKNBfqmbE6gBKQTciaD+byH+oCyxDo+ZGifsUfMfCd2SEAuVTILTx5/QQhXAMfZbrAdDlziAav81RB3E9MajRtYkXZs8DmtpejFVZYGP7npfUGoyiY2xf0F+BEYGXWd0hk6w6G",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/shiftmobile/getshiftmobile?time=7",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"shiftmobile",
+										"getshiftmobile"
+									],
+									"query": [
+										{
+											"key": "time",
+											"value": "7"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Web",
+			"item": [
+				{
+					"name": "Login",
+					"item": [
+						{
+							"name": "Login Web",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX198QlyKvPGtiToa/D9dfEHC9OaCGV2kGN05Bisy234J7KwPfo+mgRj7QPBNZ1OXCfIiGSC+eUHBDpxfqVoqo+pu8N7sQLWnJaY9chn6x4PLHqidHr1x5osY11H0h+rrpLEvY81jbbpLPs9lYQWonxb4ord95oX1WCbwsP4TjpQsxy4DsmIjMhNBoArxLrt0zgm4HNBdMVJOJCyyQRy2w1GlWR2dW3vjb+sqqEkgt40LgiVIgMW9s3Zt3/hLPr0d3T3XEUDObIMIyWdi1Py+KQsh+edm3udu4JOlyYc5pWZG0Nm8RIoIwHC/QjFM2pAVvN5Sd0t3kHDA6Srq/PEOJo8tMIxGPY8+1W33iUxg+z2P5sTzGS32C/lVG7brNEdFmvcZdVfB9zkv8g==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "Dinda",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/user/loginweb",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"user",
+										"loginweb"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "refresh",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18NtQp61n5kev9Ohb2r9gXYWCDcW5QD8qFlYRao0KoMfmmW7uzZXB8dDYG0QrdkVzDYRB50xqqY0ht01l6jZ0i2yQ7eV+lcp0CPshNqczbYdRDIWZobYK8PkAkFLxbfv3xBtyEAntHYoFCZFBH1C1oo/mScviFLxifXnvFf0sr+PL8nvh4E8Gru5N2teESYsrnwa/UfVodR7wQKaChhD+Vcs8tGc/a1HU+vVCwnm8pT6qDig691g3Xfooas+kT4OnqgSWeeGod2hmo+93ucTx62VTbgnpDYXmOr5OtxkF7jwgcGac7WTbqFI4E7DbKiAkp5H9bnn9icK39TSQl64YqMsFfC0lIwZ7nT3g1Onaj19P8A6nAXK3+ttRnb3DQQ0l/w2kCb/fQPBjmOByLTHqqaYbHNQTfWKU4=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/user/refresh",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"user",
+										"refresh"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "Fasha",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "idClient",
+											"value": "115",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "user",
+											"type": "text"
+										},
+										{
+											"key": "perusahaan",
+											"value": "BAP JAKARTA",
+											"type": "text"
+										},
+										{
+											"key": "menu",
+											"value": "all",
+											"type": "text"
+										},
+										{
+											"key": "nama",
+											"value": "Anggita Rachmadinda Putri",
+											"type": "text"
+										},
+										{
+											"key": "idCabang",
+											"value": "115",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/user/createuser",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"user",
+										"createuser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update user",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1+oeXIDh3XevqnRI0PqCYMbv9zJWUZcMH6y2nJDz9z5GD09HPfwmmpMQ4t1KiB/3VVAcKFP0Az1lDtwSSHXhRmkC8MCps/NZeXCEaBriFL3Jqpr5eL2+3EYQJvFvirS3wy5sEvc1GeEZ4fK02eDhG2xXm9ztBDyY3OwVilGIsJme1nnS7A+Gsp7owokjc4EsWooo3EuYUuz/KewyQM0LXjsBOvmmbMU0VdWoUn8cHiB+IP77r0xWdApKp3yxt5ITbPIz97QtyZwmKkQ+0IkVeTKMObnPdIukgzKZMAALEzBB2xschsqpY/KdAVmyNvEekdiGeiSVa349jLmL6dDnI1xFpHqL4vv+KJq0r+/ZW9Lla6iH1U6xqi5dZwQkzJ0TsYF3/KRbofRTqkpaRR7ZhElT0qkhdccCkQ=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nama",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "idCabang",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "perusahaan",
+											"value": "PT. Ladinna Corp",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "menu",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/user/updateuser?id=68131209e955e164687566d2",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"user",
+										"updateuser"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68131209e955e164687566d2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete user",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX198QlyKvPGtiToa/D9dfEHC9OaCGV2kGN05Bisy234J7KwPfo+mgRj7QPBNZ1OXCfIiGSC+eUHBDpxfqVoqo+pu8N7sQLWnJaY9chn6x4PLHqidHr1x5osY11H0h+rrpLEvY81jbbpLPs9lYQWonxb4ord95oX1WCbwsP4TjpQsxy4DsmIjMhNBoArxLrt0zgm4HNBdMVJOJCyyQRy2w1GlWR2dW3vjb+sqqEkgt40LgiVIgMW9s3Zt3/hLPr0d3T3XEUDObIMIyWdi1Py+KQsh+edm3udu4JOlyYc5pWZG0Nm8RIoIwHC/QjFM2pAVvN5Sd0t3kHDA6Srq/PEOJo8tMIxGPY8+1W33iUxg+z2P5sTzGS32C/lVG7brNEdFmvcZdVfB9zkv8g==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "Dinda",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/user/deleteuser?id=68131209e955e164687566d2",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"user",
+										"deleteuser"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68131209e955e164687566d2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "Dinda",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/user/me",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"user",
+										"me"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Visit",
+					"item": [
+						{
+							"name": "create visit",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX19UDeBUWEt91uq7muQwjxh6XIp1avAv8wiNiG0jU1A/ASwiJqV/3eVgaDfSrTIJ9nIYgp+gKVHCR6ymVyRlF3pFwtnbcspUE8EaZJjTLtIusDr+frXerXlQj0Jvo2LFvLPRMSb8ImxrRBLhChlX5qNdZr9E7OtLGqkAI5DPM5EvlJuD0Lvugaw50FShWbgO5Nsgm5sSoyrfk6LXe/qnY4C5OwQv8zzsNtYtB2+P8yrl8K3e7VaB9jhKB/qb5FqdRmDTDJJBY1ijKiVuucBLD5aM+rDjbhyX7hNBEn1cNWOGB23mZhUBBDefsDuz/VmibGYPRZHjiYZNLfE+eheJYE8wHhugzSvG07piABusm5jPz03bsOXZ9FI6aVJ+qtKjikFTYVaUref9zjvoDNCLOv26iiUlAkxDgnUfoDKFddQ4ARzrm8viqA+y4L43V2STY7hq3sK1JvzH9w==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idCabang",
+											"value": "1923",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "125",
+											"type": "text"
+										},
+										{
+											"key": "namaCabang",
+											"value": "Dinda",
+											"type": "text"
+										},
+										{
+											"key": "namaClient",
+											"value": "PT. Skintific Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "judul",
+											"value": "Testing Laporan",
+											"type": "text"
+										},
+										{
+											"key": "tglPelaksanaan",
+											"value": "2025-01-25T10:30:00.000Z",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "-",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "-",
+											"type": "text"
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/Desain tanpa judul.jpg",
+												"/C:/Users/Lenovo/Downloads/IMG_1905.JPG"
+											]
+										},
+										{
+											"key": "dilaporkanOleh",
+											"value": "yyy",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/visit/createvisit",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"visit",
+										"createvisit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get visit",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1+hvWBXD2rofQCMHaAullitVIRcE7C8tt2J9E8qcrrc44Hi+SwGMJEAseY750DEZQrAMSulFjV3gzW56ceUCKWPmm0xmXIUWswWpdjj9lOsC9CxTglNIa8qDQEEZxWa2OqitkQvq/uCqQzC9R6wd5lbioKwIgc7zbF6FisD+BaM5GLcOo0Y1V09Xnuh4+9vJ+Cc+Ot3EiI/4nxZaCTw2JEnGomxgXlRWdeP+euHXuCazWya7m7oPZUyswZ3IPdAKGUANaq1NnMVTO2lOg75aMUatEHO9SHGzvvb7NljRpecZHlQLtetBAd5wV3cx9A6eGrBFMPgXv6Yc0EFi6lxPfPWHqh52fGTkeL0xvxLuVG7kgvp3RDlcqikprU18X6bGpd+px8o2GcBFfhrGaW3Zkf5oWpkdAvTEzQ=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "https://cdlzk6qw-9030.asse.devtunnels.ms/visit/getvisit",
+									"protocol": "https",
+									"host": [
+										"cdlzk6qw-9030",
+										"asse",
+										"devtunnels",
+										"ms"
+									],
+									"path": [
+										"visit",
+										"getvisit"
+									],
+									"query": [
+										{
+											"key": "dariTgl",
+											"value": "1738861200000",
+											"description": "2025-02-07 00:00",
+											"disabled": true
+										},
+										{
+											"key": "smpTgl",
+											"value": "1738947540000",
+											"description": "2025-02-07 23:59",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"disabled": true
+										},
+										{
+											"key": "search",
+											"value": "Jeno",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "grafik visit",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18fTTflRMss/HqXDout5MvFxXd7sfRDY5dOIAJVoASPk0YbyJELBBIEZdyivETu/iXE0YMij/Du/L7Sq7nPbHRM96NTHzaF20mIudaY0QcOfPC76OE6OvmdZKx/MKOV6W/QFL3p04A6WAomhHyKyu6sW7HTOJRF4iWvT9+zCld7VrWE0tIYUh3pvGqIdQnghqWh4ZNLcVy5qSWLPYh92eZzLc69Yv+PMP38Hihp4l3QTB81e601mLMo14t9QKHCffcbYrmDx8qT4sKzoH5n59S3c70aZ8kFYpD4iRe+llvyTlAf9OHgboO7E0Lhz6k8wRyXPtBEqHFVOT6NAIXzUr2dfA+fb5RSHeVIZVOG14HnNEgdiELPv+Ki7SZeWK4B6kwNAMOb7G7y1Q==",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/visit/grafikvisit?dari=1738886400000&sampai=1739318400000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"visit",
+										"grafikvisit"
+									],
+									"query": [
+										{
+											"key": "dari",
+											"value": "1738886400000",
+											"description": "2025-02-07"
+										},
+										{
+											"key": "sampai",
+											"value": "1739318400000",
+											"description": "2025-02-12"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete visit",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/lW3gnL9/EmZY5FPFhajfJd5dmk1BnGugRG/7utK6ZP1dsp132RINlN3ejisVWvnnGUZn3G3TzaS+J9A/FyiMGvxlN5lwbvtlmiCkQryxQwKs2lLp1Z0DQj8slCziFBvmSZSHLqZuwC1nE0fWy8t6439j1rBVXre9sL3ZWBjRki1hVEMk5Pk14mNzQFsQ5I5auAnIGQYjHGuUnTmi9HbRODq/6AF3I3BPoi4nH9Ul/PNGVh9aM+aHFxj+TlpPDqecg256tG2C1SPvCJTCIwR0PJ1QgttqzH/vzF1bP5uQNBK5XvdPGoIwn0+y8watLEdM/CPh0RIZn0fOOS/V17AFudmpPW/591HAGG4G8ocA+YcqcYyxatpw+b0Hgdhf3tdqaCdpd6lIeN2whh0vLEAy/5tsZ6P4Zi00=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idCabang",
+											"value": "1923",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "125",
+											"type": "text"
+										},
+										{
+											"key": "namaCabang",
+											"value": "Dinda",
+											"type": "text"
+										},
+										{
+											"key": "namaClient",
+											"value": "PT. Skintific Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "judul",
+											"value": "Testing Laporan",
+											"type": "text"
+										},
+										{
+											"key": "tglPelaksanaan",
+											"value": "2025-01-25T10:30:00.000Z",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "-",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "-",
+											"type": "text"
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/invert-bap.png",
+												"/C:/Users/Lenovo/Downloads/logo_bap (1).png"
+											]
+										},
+										{
+											"key": "dilaporkanOleh",
+											"value": "yyy",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/visit/deletevisit?id=67a58893d0e8b944fcf0a6ab",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"visit",
+										"deletevisit"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "67a58893d0e8b944fcf0a6ab"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "create client",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/cky41Wm4PJiom5Gq4LfYd30USt4Izt/UxHjFC0kVLgnd5bRIYK7PxPmw/FgzOiN/pC7ZY1SJmgqYrHED1c/xsC2WnxYKH5k0j9zV61qdtFhFOwxsGADhd470s/mLKiUMAZvYj7qYBw63/HcKp0pQycokOQg3sx6FKbKU7kEAzkc5cczgkuAOlBFWUyU/FoAFwRg2JtINkws7IBmI7nUPQw9AQfsr3+Ux/30JSmTVzMElGxUlLsx+CSKQ1XwS6yEyL2HxaKGuR8buwMDCaTIIO+7NKGjpBcic4hVd+x3RQi22nnwL9Oi6Zr5Bp52PAMIx/d/DtxMSVwy4vQt/7t1I2ghWAu+O8DAgo24XvakslsI6Pw03N3XsxH1TxpP8MbGod89fN3O12uKhDjsssBsbFlmzgQqBuP9Q=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idClient",
+											"value": "115",
+											"type": "text"
+										},
+										{
+											"key": "namaClient",
+											"value": "Putri",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/client/createclient",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"client",
+										"createclient"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get client",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/cky41Wm4PJiom5Gq4LfYd30USt4Izt/UxHjFC0kVLgnd5bRIYK7PxPmw/FgzOiN/pC7ZY1SJmgqYrHED1c/xsC2WnxYKH5k0j9zV61qdtFhFOwxsGADhd470s/mLKiUMAZvYj7qYBw63/HcKp0pQycokOQg3sx6FKbKU7kEAzkc5cczgkuAOlBFWUyU/FoAFwRg2JtINkws7IBmI7nUPQw9AQfsr3+Ux/30JSmTVzMElGxUlLsx+CSKQ1XwS6yEyL2HxaKGuR8buwMDCaTIIO+7NKGjpBcic4hVd+x3RQi22nnwL9Oi6Zr5Bp52PAMIx/d/DtxMSVwy4vQt/7t1I2ghWAu+O8DAgo24XvakslsI6Pw03N3XsxH1TxpP8MbGod89fN3O12uKhDjsssBsbFlmzgQqBuP9Q=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/client/getclient",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"client",
+										"getclient"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update client",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/2U+6YjgWRP56gbsJ1VOWFCtvgw9yajf/WnLc0QJbf92mgpEdAhMdOpJmE61I+iitUga/jU9u46YLEZcDrdy88h+/iQ1cuAF4MkzWFu09IsLOp8h7NEfll+yY/9l5E3xwVo/Zbr/VMrUGgO1AEqQsiLQq61wezg/+lS3C3AomWNSKZhBcxvzt7c11+1ZP1h5Xv+Gf7z87XmBqzyh1XdmbzHiL3BywKsI0i2lSio+C2EHekNN/E+9S+uFBjH3EMYKdoTEyjO614E2k//sAvPDgY7D09rehn2ARpxf9ZCaahJikUTKgpkjcLQBzHovnAPZzwTz34QVokIXzbxb+S0AtHZAHYk2mW0m3pYOS94LcDw+yo7c2iXVoefqDW6ijrPimT0L3HQBH7FQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "namaClient",
+											"value": "Talitha",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/client/updateclient?idClient=140",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"client",
+										"updateclient"
+									],
+									"query": [
+										{
+											"key": "idClient",
+											"value": "140"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete client",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/2U+6YjgWRP56gbsJ1VOWFCtvgw9yajf/WnLc0QJbf92mgpEdAhMdOpJmE61I+iitUga/jU9u46YLEZcDrdy88h+/iQ1cuAF4MkzWFu09IsLOp8h7NEfll+yY/9l5E3xwVo/Zbr/VMrUGgO1AEqQsiLQq61wezg/+lS3C3AomWNSKZhBcxvzt7c11+1ZP1h5Xv+Gf7z87XmBqzyh1XdmbzHiL3BywKsI0i2lSio+C2EHekNN/E+9S+uFBjH3EMYKdoTEyjO614E2k//sAvPDgY7D09rehn2ARpxf9ZCaahJikUTKgpkjcLQBzHovnAPZzwTz34QVokIXzbxb+S0AtHZAHYk2mW0m3pYOS94LcDw+yo7c2iXVoefqDW6ijrPimT0L3HQBH7FQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/client/deleteclient?idClient=140",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"client",
+										"deleteclient"
+									],
+									"query": [
+										{
+											"key": "idClient",
+											"value": "140"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cabang",
+					"item": [
+						{
+							"name": "create cabang",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/cky41Wm4PJiom5Gq4LfYd30USt4Izt/UxHjFC0kVLgnd5bRIYK7PxPmw/FgzOiN/pC7ZY1SJmgqYrHED1c/xsC2WnxYKH5k0j9zV61qdtFhFOwxsGADhd470s/mLKiUMAZvYj7qYBw63/HcKp0pQycokOQg3sx6FKbKU7kEAzkc5cczgkuAOlBFWUyU/FoAFwRg2JtINkws7IBmI7nUPQw9AQfsr3+Ux/30JSmTVzMElGxUlLsx+CSKQ1XwS6yEyL2HxaKGuR8buwMDCaTIIO+7NKGjpBcic4hVd+x3RQi22nnwL9Oi6Zr5Bp52PAMIx/d/DtxMSVwy4vQt/7t1I2ghWAu+O8DAgo24XvakslsI6Pw03N3XsxH1TxpP8MbGod89fN3O12uKhDjsssBsbFlmzgQqBuP9Q=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idCabang",
+											"value": "1010",
+											"type": "text"
+										},
+										{
+											"key": "namaCabang",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "125",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/cabang/createcabang",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"cabang",
+										"createcabang"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get cabang",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/2U+6YjgWRP56gbsJ1VOWFCtvgw9yajf/WnLc0QJbf92mgpEdAhMdOpJmE61I+iitUga/jU9u46YLEZcDrdy88h+/iQ1cuAF4MkzWFu09IsLOp8h7NEfll+yY/9l5E3xwVo/Zbr/VMrUGgO1AEqQsiLQq61wezg/+lS3C3AomWNSKZhBcxvzt7c11+1ZP1h5Xv+Gf7z87XmBqzyh1XdmbzHiL3BywKsI0i2lSio+C2EHekNN/E+9S+uFBjH3EMYKdoTEyjO614E2k//sAvPDgY7D09rehn2ARpxf9ZCaahJikUTKgpkjcLQBzHovnAPZzwTz34QVokIXzbxb+S0AtHZAHYk2mW0m3pYOS94LcDw+yo7c2iXVoefqDW6ijrPimT0L3HQBH7FQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/cabang/getcabang",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"cabang",
+										"getcabang"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update cabang",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/2U+6YjgWRP56gbsJ1VOWFCtvgw9yajf/WnLc0QJbf92mgpEdAhMdOpJmE61I+iitUga/jU9u46YLEZcDrdy88h+/iQ1cuAF4MkzWFu09IsLOp8h7NEfll+yY/9l5E3xwVo/Zbr/VMrUGgO1AEqQsiLQq61wezg/+lS3C3AomWNSKZhBcxvzt7c11+1ZP1h5Xv+Gf7z87XmBqzyh1XdmbzHiL3BywKsI0i2lSio+C2EHekNN/E+9S+uFBjH3EMYKdoTEyjO614E2k//sAvPDgY7D09rehn2ARpxf9ZCaahJikUTKgpkjcLQBzHovnAPZzwTz34QVokIXzbxb+S0AtHZAHYk2mW0m3pYOS94LcDw+yo7c2iXVoefqDW6ijrPimT0L3HQBH7FQ==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "namaCabang",
+											"value": "mengpe",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/cabang/updatecabang?idCabang=2223",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"cabang",
+										"updatecabang"
+									],
+									"query": [
+										{
+											"key": "idCabang",
+											"value": "2223"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete cabang",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/cky41Wm4PJiom5Gq4LfYd30USt4Izt/UxHjFC0kVLgnd5bRIYK7PxPmw/FgzOiN/pC7ZY1SJmgqYrHED1c/xsC2WnxYKH5k0j9zV61qdtFhFOwxsGADhd470s/mLKiUMAZvYj7qYBw63/HcKp0pQycokOQg3sx6FKbKU7kEAzkc5cczgkuAOlBFWUyU/FoAFwRg2JtINkws7IBmI7nUPQw9AQfsr3+Ux/30JSmTVzMElGxUlLsx+CSKQ1XwS6yEyL2HxaKGuR8buwMDCaTIIO+7NKGjpBcic4hVd+x3RQi22nnwL9Oi6Zr5Bp52PAMIx/d/DtxMSVwy4vQt/7t1I2ghWAu+O8DAgo24XvakslsI6Pw03N3XsxH1TxpP8MbGod89fN3O12uKhDjsssBsbFlmzgQqBuP9Q=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/cabang/deletecabang?idCabang=1010",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"cabang",
+										"deletecabang"
+									],
+									"query": [
+										{
+											"key": "idCabang",
+											"value": "1010"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ruangan",
+					"item": [
+						{
+							"name": "create ruangan",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18s9RMIRy7/Uw9J1X7yNefSvBbo/YxYw7TbHWKTpiQiM5dSlqyV00wxR0bziyjjSrvVcwm8wckgl4Ky6OsVNc6LxlVbbiayOrNqAG9sFG9DH1Ht5e4AL7K/ZLjCNf3Pp9NWJl1Xk2ZiMp8EMHHaybEyyjN8CUUwOIJg/c2LvA4s6ibWFyD17K85MWxW5AqFMvFH4y0FsFFsWHCGlY7339Zn940jKgL5/yk2RlKPn/AQP0Fs4qTBgr+dxjtwGLCnNkyCSOzOqd/jpjYDB/Wk/uE1nTDOTLDhffrmCHhuHZ4aM4gqD/MUCM86obV24sec02a7vf8B0/GjqipDkvx+hu3RQpdP4aui6S6Q5GCWDvG6VOXl4T33OXdFYBS2ZWnyQPbrfs2vj2WxDw==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idCabang",
+											"value": "2223",
+											"type": "text"
+										},
+										{
+											"key": "ruangan",
+											"value": "KM",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "175",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/ruangan/createruangan",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ruangan",
+										"createruangan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get ruangan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/szBtwpracv/4O0n+5Q8anUAuQQawW+kohPYPLwYkmquaCPY7JwhY7sEXeni9N6vAzTqRRMBSv93MC0rncdpmAWFWgCPjeA8qYieN4yNAlq5RSrd3lnQbg47d1HlSQiCEjNDA+FYDbmUIqTra2mIStBJ/BqlYKXc/Bd26kN+jQ3rYaFe7Ku3XkNcAvsx7cWtrv5A3EJuO7J+t1/qxClR0WcOQ83Sr2d9R7e/ctvP8U0xJYx8Wr3D2uWiNtzkgnxojOTze/Tsj7c00eBqZDE/VzLEa5nAFvJLfp2sIOpwtfxUn6U3gsmk0KwDY9x+oiPWzJT29rx9bcX9Klrk9fadttWX+qYel6q3WsQw+UVYwt3wx9uoZqXNLZvEH2c0mU4DSjjJAmAYfkLA==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/ruangan/getruangan",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ruangan",
+										"getruangan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete ruangan",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/lW3gnL9/EmZY5FPFhajfJd5dmk1BnGugRG/7utK6ZP1dsp132RINlN3ejisVWvnnGUZn3G3TzaS+J9A/FyiMGvxlN5lwbvtlmiCkQryxQwKs2lLp1Z0DQj8slCziFBvmSZSHLqZuwC1nE0fWy8t6439j1rBVXre9sL3ZWBjRki1hVEMk5Pk14mNzQFsQ5I5auAnIGQYjHGuUnTmi9HbRODq/6AF3I3BPoi4nH9Ul/PNGVh9aM+aHFxj+TlpPDqecg256tG2C1SPvCJTCIwR0PJ1QgttqzH/vzF1bP5uQNBK5XvdPGoIwn0+y8watLEdM/CPh0RIZn0fOOS/V17AFudmpPW/591HAGG4G8ocA+YcqcYyxatpw+b0Hgdhf3tdqaCdpd6lIeN2whh0vLEAy/5tsZ6P4Zi00=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/ruangan/deleteruangan?id=691f24413bd38059ec82a440",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ruangan",
+										"deleteruangan"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "691f24413bd38059ec82a440"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get jumlah ruangan",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/WqlSWgh9fWxyP2UwmHurWVjj75L3lTDgjMuoSKRzC0cDKnbdrIVAH3E8lIwiGnFHFSWGnQx53VQEA36owryh3eLeCUwg08TqcnGBVxcU7PhKtWfCyyv81RH1yK3gYD3p/9LnW8P6Nmq11rDLCEfFZqNSluu2O5t62o9nHW/ctmQ4Yno/cmdz5y6kAEDYJNUBQM5F1cUDu9bKZtKZ4vhtYQSG9o//Bj5RIv1uOlc9DV2N0Wh3ERz3GW+Jfr8oaPTrco9mp3uDMRMXh3aqaVPYMNLH1DZTocSd00xeoAo2CmjctuK1njWl8W4BZ/ATS9VX48NfVBA0kGYxPhr0EXt6NRgcLmFZsP5Tw95DcM/b01Z6EXdfPAoD3bj3eEd2gF1vLyjGD6JF7mwbj0blrGMMK/lSVeX2ImYndEHwilzBNWMh/lGegcVl/",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idCabang",
+											"value": "2223",
+											"type": "text"
+										},
+										{
+											"key": "ruangan",
+											"value": "KM",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "175",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/ruangan/getJumlahruangan",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"ruangan",
+										"getJumlahruangan"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Shift",
+					"item": [
+						{
+							"name": "create shift",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18dyXOzWFPH9xudwwr6EKM6bESOu29jLdDR4IXf1Q+44RFThVzElHw1py1X3f4qOEfk2MxuTOX2ai/ZpNN8MlECWbzOPRsI1C+BuAjLBCMbm7TVq7Bs+fcq2hQXW904/KaaG12JJGk595fme2vz3FjiQJwE/zJKifzIKgroL9AvgSHNJKrENXbjCv5QNAgjfetVALpt0qBJQ5w7YQDWDMXDQf5eDrs0cVqEKu56X+r+jQlMt+fAz1ttCojt7Yd2wyEgmD7NUW3qaAp+94KsegIuhJKx7ZSk+bns4DTRHF0CChqmoenPd4w1CKwxk3Q4DVB/Syj15gLlxUl0NgQKtlm1i5tKgHp4Bcx124ZkFKlGT2Hif3Z1D3/Jr80TZ5+L/x1Nh1e0DstoiA==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idCabang",
+											"value": "2223",
+											"type": "text"
+										},
+										{
+											"key": "namaShift",
+											"value": "Shift 1",
+											"type": "text"
+										},
+										{
+											"key": "durasi",
+											"value": "8",
+											"type": "text"
+										},
+										{
+											"key": "patroli",
+											"value": "8",
+											"type": "text"
+										},
+										{
+											"key": "jam",
+											"value": "15",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/shift/createshift",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"shift",
+										"createshift"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get shift",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/lW3gnL9/EmZY5FPFhajfJd5dmk1BnGugRG/7utK6ZP1dsp132RINlN3ejisVWvnnGUZn3G3TzaS+J9A/FyiMGvxlN5lwbvtlmiCkQryxQwKs2lLp1Z0DQj8slCziFBvmSZSHLqZuwC1nE0fWy8t6439j1rBVXre9sL3ZWBjRki1hVEMk5Pk14mNzQFsQ5I5auAnIGQYjHGuUnTmi9HbRODq/6AF3I3BPoi4nH9Ul/PNGVh9aM+aHFxj+TlpPDqecg256tG2C1SPvCJTCIwR0PJ1QgttqzH/vzF1bP5uQNBK5XvdPGoIwn0+y8watLEdM/CPh0RIZn0fOOS/V17AFudmpPW/591HAGG4G8ocA+YcqcYyxatpw+b0Hgdhf3tdqaCdpd6lIeN2whh0vLEAy/5tsZ6P4Zi00=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/shift/getshift",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"shift",
+										"getshift"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete shift",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/cky41Wm4PJiom5Gq4LfYd30USt4Izt/UxHjFC0kVLgnd5bRIYK7PxPmw/FgzOiN/pC7ZY1SJmgqYrHED1c/xsC2WnxYKH5k0j9zV61qdtFhFOwxsGADhd470s/mLKiUMAZvYj7qYBw63/HcKp0pQycokOQg3sx6FKbKU7kEAzkc5cczgkuAOlBFWUyU/FoAFwRg2JtINkws7IBmI7nUPQw9AQfsr3+Ux/30JSmTVzMElGxUlLsx+CSKQ1XwS6yEyL2HxaKGuR8buwMDCaTIIO+7NKGjpBcic4hVd+x3RQi22nnwL9Oi6Zr5Bp52PAMIx/d/DtxMSVwy4vQt/7t1I2ghWAu+O8DAgo24XvakslsI6Pw03N3XsxH1TxpP8MbGod89fN3O12uKhDjsssBsbFlmzgQqBuP9Q=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idRuangan",
+											"value": "6790a0c41198572708e43cbb",
+											"type": "text"
+										},
+										{
+											"key": "idShift",
+											"value": "679054ebbf291143f473a3cb",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "ACC",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "SPAM",
+											"type": "text"
+										},
+										{
+											"key": "nfc",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "temuan",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/WhatsApp Image 2025-04-30 at 08.48.37_58f4ac14 (1).jpg",
+												"/C:/Users/Lenovo/Downloads/ChatGPT Image 30 Apr 2025, 09.48.24.png"
+											]
+										},
+										{
+											"key": "idCabang",
+											"value": "2222",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "idClient",
+											"value": "140",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaCabang",
+											"value": "PT SMTOWN",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaClient",
+											"value": "Dinda",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaRuangan",
+											"value": "Test",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaShift",
+											"value": "Test",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "dilaporkanOleh",
+											"value": "Din",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "tglLaporan",
+											"value": "2025-01-25",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/shift/deleteshift?id=6790b1e0d2a3244d5ce92b45",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"shift",
+										"deleteshift"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "6790b1e0d2a3244d5ce92b45"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Training",
+					"item": [
+						{
+							"name": "create training",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX19UDeBUWEt91uq7muQwjxh6XIp1avAv8wiNiG0jU1A/ASwiJqV/3eVgaDfSrTIJ9nIYgp+gKVHCR6ymVyRlF3pFwtnbcspUE8EaZJjTLtIusDr+frXerXlQj0Jvo2LFvLPRMSb8ImxrRBLhChlX5qNdZr9E7OtLGqkAI5DPM5EvlJuD0Lvugaw50FShWbgO5Nsgm5sSoyrfk6LXe/qnY4C5OwQv8zzsNtYtB2+P8yrl8K3e7VaB9jhKB/qb5FqdRmDTDJJBY1ijKiVuucBLD5aM+rDjbhyX7hNBEn1cNWOGB23mZhUBBDefsDuz/VmibGYPRZHjiYZNLfE+eheJYE8wHhugzSvG07piABusm5jPz03bsOXZ9FI6aVJ+qtKjikFTYVaUref9zjvoDNCLOv26iiUlAkxDgnUfoDKFddQ4ARzrm8viqA+y4L43V2STY7hq3sK1JvzH9w==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idCabang",
+											"value": "1923",
+											"type": "text"
+										},
+										{
+											"key": "idClient",
+											"value": "125",
+											"type": "text"
+										},
+										{
+											"key": "namaCabang",
+											"value": "Dinda",
+											"type": "text"
+										},
+										{
+											"key": "namaClient",
+											"value": "PT. Skintific Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "judul",
+											"value": "Testing",
+											"type": "text"
+										},
+										{
+											"key": "tglPelaksanaan",
+											"value": "2025-01-25T10:30:00.000Z",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "INI DINDA",
+											"type": "text"
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/IMG_1905.JPG",
+												"/C:/Users/Lenovo/Downloads/Desain tanpa judul.jpg"
+											]
+										},
+										{
+											"key": "dilaporkanOleh",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "ACC",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/training/createtraining",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"training",
+										"createtraining"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get training",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX18dyXOzWFPH9xudwwr6EKM6bESOu29jLdDR4IXf1Q+44RFThVzElHw1py1X3f4qOEfk2MxuTOX2ai/ZpNN8MlECWbzOPRsI1C+BuAjLBCMbm7TVq7Bs+fcq2hQXW904/KaaG12JJGk595fme2vz3FjiQJwE/zJKifzIKgroL9AvgSHNJKrENXbjCv5QNAgjfetVALpt0qBJQ5w7YQDWDMXDQf5eDrs0cVqEKu56X+r+jQlMt+fAz1ttCojt7Yd2wyEgmD7NUW3qaAp+94KsegIuhJKx7ZSk+bns4DTRHF0CChqmoenPd4w1CKwxk3Q4DVB/Syj15gLlxUl0NgQKtlm1i5tKgHp4Bcx124ZkFKlGT2Hif3Z1D3/Jr80TZ5+L/x1Nh1e0DstoiA==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/training/gettraining",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"training",
+										"gettraining"
+									],
+									"query": [
+										{
+											"key": "dariTgl",
+											"value": "1737738000000",
+											"description": "2025-05-01 00:00",
+											"disabled": true
+										},
+										{
+											"key": "smpTgl",
+											"value": "1746118740000",
+											"description": "2025-05-01 23:59",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"disabled": true
+										},
+										{
+											"key": "search",
+											"value": "Dinda",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "grafik Training",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1+Y/t5vipG0shXrfave9j6xMlJ8QOlbhhId7dgKYP4X/zTnag8u4SSh0OD78jCfz/+SHFgOGotvB6BhbEbm5s3293NXvviQFWAusdgN0YewVUVfo27hcE5VG9rJOp0m1ZWWRLfytq2zwSW7SSVXvcX/+V8jRjsu3OoelyrIqNKtl3wcWwLBlRaCgJuVhu6fdtJMcM21vdeGKL3Lat5TopbfBmLBs4B48wfvy99HPISgpnAWIQ5S0ZRa4jul/SjoFNsD2Wt1aD6ixy+Y4YFYCsvLZt1ylbZkLWO14hqIVEBeXnaRAQPwek5KC5F8/Qmhhw0+/g5zQIV75S2PlVeNI4pBj0Bm0Szc0hnZvlgh5Xed3iNZZ7j1m+5f",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/training/grafiktraining?dari=1738342800000&sampai=1740700800000",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"training",
+										"grafiktraining"
+									],
+									"query": [
+										{
+											"key": "dari",
+											"value": "1738342800000",
+											"description": "2025-03-12"
+										},
+										{
+											"key": "sampai",
+											"value": "1740700800000",
+											"description": "2025-05-29"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete training",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/cky41Wm4PJiom5Gq4LfYd30USt4Izt/UxHjFC0kVLgnd5bRIYK7PxPmw/FgzOiN/pC7ZY1SJmgqYrHED1c/xsC2WnxYKH5k0j9zV61qdtFhFOwxsGADhd470s/mLKiUMAZvYj7qYBw63/HcKp0pQycokOQg3sx6FKbKU7kEAzkc5cczgkuAOlBFWUyU/FoAFwRg2JtINkws7IBmI7nUPQw9AQfsr3+Ux/30JSmTVzMElGxUlLsx+CSKQ1XwS6yEyL2HxaKGuR8buwMDCaTIIO+7NKGjpBcic4hVd+x3RQi22nnwL9Oi6Zr5Bp52PAMIx/d/DtxMSVwy4vQt/7t1I2ghWAu+O8DAgo24XvakslsI6Pw03N3XsxH1TxpP8MbGod89fN3O12uKhDjsssBsbFlmzgQqBuP9Q=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idRuangan",
+											"value": "6790a0c41198572708e43cbb",
+											"type": "text"
+										},
+										{
+											"key": "idShift",
+											"value": "679054ebbf291143f473a3cb",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "ACC",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "SPAM",
+											"type": "text"
+										},
+										{
+											"key": "nfc",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "temuan",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/WhatsApp Image 2025-04-30 at 08.48.37_58f4ac14 (1).jpg",
+												"/C:/Users/Lenovo/Downloads/ChatGPT Image 30 Apr 2025, 09.48.24.png"
+											]
+										},
+										{
+											"key": "idCabang",
+											"value": "2222",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "idClient",
+											"value": "140",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaCabang",
+											"value": "PT SMTOWN",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaClient",
+											"value": "Dinda",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaRuangan",
+											"value": "Test",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaShift",
+											"value": "Test",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "dilaporkanOleh",
+											"value": "Din",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "tglLaporan",
+											"value": "2025-01-25",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/training/deletetraining?id=6794bce312cfde216092cc11",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"training",
+										"deletetraining"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "6794bce312cfde216092cc11"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Patrol",
+					"item": [
+						{
+							"name": "create patrol",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX19UDeBUWEt91uq7muQwjxh6XIp1avAv8wiNiG0jU1A/ASwiJqV/3eVgaDfSrTIJ9nIYgp+gKVHCR6ymVyRlF3pFwtnbcspUE8EaZJjTLtIusDr+frXerXlQj0Jvo2LFvLPRMSb8ImxrRBLhChlX5qNdZr9E7OtLGqkAI5DPM5EvlJuD0Lvugaw50FShWbgO5Nsgm5sSoyrfk6LXe/qnY4C5OwQv8zzsNtYtB2+P8yrl8K3e7VaB9jhKB/qb5FqdRmDTDJJBY1ijKiVuucBLD5aM+rDjbhyX7hNBEn1cNWOGB23mZhUBBDefsDuz/VmibGYPRZHjiYZNLfE+eheJYE8wHhugzSvG07piABusm5jPz03bsOXZ9FI6aVJ+qtKjikFTYVaUref9zjvoDNCLOv26iiUlAkxDgnUfoDKFddQ4ARzrm8viqA+y4L43V2STY7hq3sK1JvzH9w==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idRuangan",
+											"value": "69299ae5495ff42fa48c6045",
+											"type": "text"
+										},
+										{
+											"key": "idShift",
+											"value": "6790b2fbbe650a48fcb7cf9e",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "ACC",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "SPAM",
+											"type": "text"
+										},
+										{
+											"key": "nfc",
+											"value": "true",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "temuan",
+											"value": "true",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/Desain tanpa judul.jpg",
+												"/C:/Users/Lenovo/Downloads/IMG_1905.JPG"
+											]
+										},
+										{
+											"key": "idCabang",
+											"value": "2222",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "idClient",
+											"value": "140",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaCabang",
+											"value": "PT SMTOWN",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaClient",
+											"value": "Dinda",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaRuangan",
+											"value": "Test",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaShift",
+											"value": "Test",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "dilaporkanOleh",
+											"value": "Din",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "tglLaporan",
+											"value": "2025-01-25",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/patrol/createpatrol",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"patrol",
+										"createpatrol"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get patrol",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX19UDeBUWEt91uq7muQwjxh6XIp1avAv8wiNiG0jU1A/ASwiJqV/3eVgaDfSrTIJ9nIYgp+gKVHCR6ymVyRlF3pFwtnbcspUE8EaZJjTLtIusDr+frXerXlQj0Jvo2LFvLPRMSb8ImxrRBLhChlX5qNdZr9E7OtLGqkAI5DPM5EvlJuD0Lvugaw50FShWbgO5Nsgm5sSoyrfk6LXe/qnY4C5OwQv8zzsNtYtB2+P8yrl8K3e7VaB9jhKB/qb5FqdRmDTDJJBY1ijKiVuucBLD5aM+rDjbhyX7hNBEn1cNWOGB23mZhUBBDefsDuz/VmibGYPRZHjiYZNLfE+eheJYE8wHhugzSvG07piABusm5jPz03bsOXZ9FI6aVJ+qtKjikFTYVaUref9zjvoDNCLOv26iiUlAkxDgnUfoDKFddQ4ARzrm8viqA+y4L43V2STY7hq3sK1JvzH9w==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{baseURL}}/patrol/getpatrol?dariTgl=1737738000000&smpTgl=1739435200683&page=1&limit=10&search=Rudi Hadi Sutrisno&shift=Shift 1",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"patrol",
+										"getpatrol"
+									],
+									"query": [
+										{
+											"key": "dariTgl",
+											"value": "1737738000000",
+											"description": "2025-01-25 00:00"
+										},
+										{
+											"key": "smpTgl",
+											"value": "1739435200683",
+											"description": "2025-02-13 23:5"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "search",
+											"value": "Rudi Hadi Sutrisno"
+										},
+										{
+											"key": "shift",
+											"value": "Shift 1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete patrol",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/lW3gnL9/EmZY5FPFhajfJd5dmk1BnGugRG/7utK6ZP1dsp132RINlN3ejisVWvnnGUZn3G3TzaS+J9A/FyiMGvxlN5lwbvtlmiCkQryxQwKs2lLp1Z0DQj8slCziFBvmSZSHLqZuwC1nE0fWy8t6439j1rBVXre9sL3ZWBjRki1hVEMk5Pk14mNzQFsQ5I5auAnIGQYjHGuUnTmi9HbRODq/6AF3I3BPoi4nH9Ul/PNGVh9aM+aHFxj+TlpPDqecg256tG2C1SPvCJTCIwR0PJ1QgttqzH/vzF1bP5uQNBK5XvdPGoIwn0+y8watLEdM/CPh0RIZn0fOOS/V17AFudmpPW/591HAGG4G8ocA+YcqcYyxatpw+b0Hgdhf3tdqaCdpd6lIeN2whh0vLEAy/5tsZ6P4Zi00=",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "idRuangan",
+											"value": "68118f7340c6f81250095646",
+											"type": "text"
+										},
+										{
+											"key": "idShift",
+											"value": "6790b2fbbe650a48fcb7cf9e",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "ACC",
+											"type": "text"
+										},
+										{
+											"key": "deskripsi",
+											"value": "SPAM",
+											"type": "text"
+										},
+										{
+											"key": "nfc",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "temuan",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "dokumentasi",
+											"type": "file",
+											"src": [
+												"/C:/Users/Lenovo/Downloads/Screenshot 2025-11-21 113632.png",
+												"/C:/Users/Lenovo/Downloads/invert-bap.png"
+											]
+										},
+										{
+											"key": "idCabang",
+											"value": "2222",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "idClient",
+											"value": "140",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaCabang",
+											"value": "PT SMTOWN",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaClient",
+											"value": "Dinda",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaRuangan",
+											"value": "Test",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "namaShift",
+											"value": "Test",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "dilaporkanOleh",
+											"value": "Din",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "tglLaporan",
+											"value": "2025-01-25",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}/patrol/deletepatrol?id=679468fcb4109c1250638094",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"patrol",
+										"deletepatrol"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "679468fcb4109c1250638094"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get jumlah patrol",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "U2FsdGVkX1/WqlSWgh9fWxyP2UwmHurWVjj75L3lTDgjMuoSKRzC0cDKnbdrIVAH3E8lIwiGnFHFSWGnQx53VQEA36owryh3eLeCUwg08TqcnGBVxcU7PhKtWfCyyv81RH1yK3gYD3p/9LnW8P6Nmq11rDLCEfFZqNSluu2O5t62o9nHW/ctmQ4Yno/cmdz5y6kAEDYJNUBQM5F1cUDu9bKZtKZ4vhtYQSG9o//Bj5RIv1uOlc9DV2N0Wh3ERz3GW+Jfr8oaPTrco9mp3uDMRMXh3aqaVPYMNLH1DZTocSd00xeoAo2CmjctuK1njWl8W4BZ/ATS9VX48NfVBA0kGYxPhr0EXt6NRgcLmFZsP5Tw95DcM/b01Z6EXdfPAoD3bj3eEd2gF1vLyjGD6JF7mwbj0blrGMMK/lSVeX2ImYndEHwilzBNWMh/lGegcVl/",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL}}/patrol/getJumlahpatrol",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"patrol",
+										"getJumlahpatrol"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

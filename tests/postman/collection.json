@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Backend API Collection",
+    "_postman_id": "1234-abcd-5678",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET Hello",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/hello"
+      }
+    },
+    {
+      "name": "POST Login",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/login",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"test@example.com\",\"password\":\"123\"}"
+        }
+      }
+    }
+  ]
+}
